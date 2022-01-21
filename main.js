@@ -1,9 +1,8 @@
-let Km = prompt ("Quanti Km devi percorrere?")
+let Km = parseInt(prompt ("Quanti Km devi percorrere?"));
 
-let age = prompt ("Quanti anni hai?")
+let age = parseInt(prompt ("Quanti anni hai?"));
 
 let Km_price = Km * 0.21;
-console.log (Km_price);
 
 if (age < 18) {
  let sale = (Km_price*20/100);
@@ -14,7 +13,7 @@ if (age < 18) {
  document.getElementById("calculator").innerHTML = ("il costo del biglietto è di " + (Km_price - sale) + " euro");
 
 } else if (age > 18 && age < 65 ) {
-    document.getElementById("calculator").innerHTML = ("il costo del biglietto è di " + (Km_price) + " euro");
+ document.getElementById("calculator").innerHTML = ("il costo del biglietto è di " + (Km_price) + " euro");
 }
 
 
